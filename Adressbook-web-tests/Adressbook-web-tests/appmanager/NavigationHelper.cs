@@ -14,7 +14,7 @@ namespace WebAdressbookTests
     {
         private string baseURL;
 
-        public NavigationHelper(ApplicationManager manager) 
+        public NavigationHelper(ApplicationManager manager, string baseURL) 
             : base(manager)
         {
             this.baseURL = baseURL;

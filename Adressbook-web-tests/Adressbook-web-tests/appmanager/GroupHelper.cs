@@ -29,6 +29,14 @@ namespace WebAdressbookTests
             return this;
         }
 
+        public GroupHelper Remove(int v)
+        {
+            manager.Navigator.GoToGroupsPage();
+            SelectGroup(1);
+            RemoveGroup();
+            ReturnToGroupsPage();
+            return this;
+        }
 
         public GroupHelper InitNewGroupCreation()
         {
@@ -97,6 +105,8 @@ namespace WebAdressbookTests
             driver.FindElement(By.Name("lastname")).Clear();
             driver.FindElement(By.Name("lastname")).SendKeys(contact.Lastname);
             return this;
+    
+
         }
     }
 }
