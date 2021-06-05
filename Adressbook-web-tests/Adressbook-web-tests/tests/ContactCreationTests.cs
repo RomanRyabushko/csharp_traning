@@ -17,10 +17,9 @@ namespace WebAdressbookTests
             ContactData contact = new ContactData("777");
             contact.Middlename = "";
             contact.Lastname = "888";
-            app.Groups
-                .FillContactForm(contact)
-                .SubmitAccountCreation()
-                .ReturnToHomePage();
+
+            app.Contact.Create(contact);
+               
          }
 
      }
