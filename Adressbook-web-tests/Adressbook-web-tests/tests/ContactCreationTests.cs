@@ -11,7 +11,7 @@ namespace WebAdressbookTests
     public class ContactCreationTests : TestBase
     {
         [Test]
-        public void TheContactCreationTests()
+        public void TheContactCreationTest()
         {
             app.Navigator.GoToAddNewContactPage();
             ContactData contact = new ContactData("777");

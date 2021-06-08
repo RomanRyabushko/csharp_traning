@@ -53,17 +53,17 @@
     </TypeIdentifier>
   </Class>
   <Class Name="WebAdressbookTests.NavigationHelper" Collapsed="true">
-    <Position X="9.75" Y="4" Width="1.5" />
+    <Position X="9.25" Y="3.75" Width="1.5" />
     <InheritanceLine Type="WebAdressbookTests.HelperBase" ManuallyRouted="true">
       <Path>
         <Point X="8.25" Y="1.312" />
         <Point X="8.25" Y="1.51" />
-        <Point X="10.5" Y="1.51" />
-        <Point X="10.5" Y="4" />
+        <Point X="10" Y="1.51" />
+        <Point X="10" Y="3.75" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAKA=</HashCode>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAIAAAKA=</HashCode>
       <FileName>appmanager\NavigationHelper.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -79,8 +79,8 @@
     <AssociationLine Name="navigator" Type="WebAdressbookTests.NavigationHelper" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="5.75" Y="3.562" />
-        <Point X="5.75" Y="4.312" />
-        <Point X="9.75" Y="4.312" />
+        <Point X="5.75" Y="4.062" />
+        <Point X="9.25" Y="4.062" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -91,6 +91,7 @@
       <Field Name="loginHelper" />
       <Field Name="navigator" />
       <Field Name="groupHelper" />
+      <Field Name="contactHelper" />
     </ShowAsAssociation>
   </Class>
   <Class Name="WebAdressbookTests.ContactCreationTests">
@@ -98,6 +99,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>tests\ContactCreationTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebAdressbookTests.ContactHelper" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAACAAAAEECAAAAYAAAAAAA=</HashCode>
+      <FileName>appmanager\ContactHelper.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
