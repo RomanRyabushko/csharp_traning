@@ -41,7 +41,7 @@ namespace WebAdressbookTests
             manager.Navigator.GoToContactPage();
             SelectContact(v);
             Remove();
-            //AlertAccept();
+            AlertAccept();
             return this;
         }
         
@@ -87,11 +87,13 @@ namespace WebAdressbookTests
             return this;
         
         }
-         //public ContactHelper AlertAccept()
-        //{
-           // Assert.IsTrue(Regex.IsMatch(driver.SwitchTo().Alert().Accept(),  "^Delete 1 addresses[\\s\\S]$"));
-           // return this;
-       //}
+         public ContactHelper AlertAccept()
+        {
+                                      
+            Assert.IsTrue(Regex.IsMatch(driver.SwitchTo().Alert().Text, "^Delete 1 addresses[\\s\\S]$"));
+            driver.SwitchTo().Alert().Accept();
+            return this;
+        }
 
         
         public ContactHelper InitContactModification()
