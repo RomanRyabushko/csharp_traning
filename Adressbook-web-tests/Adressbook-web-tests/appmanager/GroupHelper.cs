@@ -58,7 +58,7 @@ namespace WebAdressbookTests
         public GroupHelper FillGroupForm(GroupData group)
         {
             Type(By.Name("group_name"), group.Name);
-            Type(By.Name("group_name"), group.Header);
+            Type(By.Name("group_header"), group.Header);
             Type(By.Name("group_footer"), group.Footer);
             return this;
 
