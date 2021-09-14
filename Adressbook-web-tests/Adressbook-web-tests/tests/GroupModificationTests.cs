@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
@@ -12,7 +11,6 @@ namespace WebAdressbookTests
 
     public class GroupModificationTests : AuthTestBase
     {
-
         [Test]
         public void GroupModificationTest()
         {
@@ -21,7 +19,7 @@ namespace WebAdressbookTests
         newData.Footer = null;
         newData.Header = null;
 
-        app.Groups.Modify(1, newData);
+        app.Groups.Modify(0, newData);
 
         }
     }
